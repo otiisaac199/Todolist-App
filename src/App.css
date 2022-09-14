@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Roboto;
 }
@@ -13,6 +18,7 @@ body {
   color: #fff;
   min-height: 450px;
   margin: 3rem auto 0;
+  text-align: center;
 }
 
 .todo-row {
@@ -68,7 +74,7 @@ body {
   height: auto;
   border: 2px solid rgb(88, 0, 204);
   border-radius: 5px;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem;
 }
 
 .todo-form input {
@@ -96,4 +102,15 @@ body {
   width: 30%;
   padding: 0.6rem;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-list {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .todo-list {
+  }
 }
