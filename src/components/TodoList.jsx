@@ -15,7 +15,7 @@ function TodoList() {
     setTodos(newTodos);
   };
 
-  const updatedTodos = (todoId, newValue) => {
+  const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
     }
@@ -38,7 +38,7 @@ function TodoList() {
       }
       return todo;
     });
-    setTodos(updatedTodo);
+    setTodos(updatedTodos);
   };
 
   return (
@@ -49,7 +49,7 @@ function TodoList() {
         todos={todos}
         completeTodo={completeTodo}
         removeTodo={removeTodo}
-        updatedTodos={updatedTodos}
+        updateTodo={updateTodo}
       />
     </div>
   );
